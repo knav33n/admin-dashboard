@@ -1,16 +1,8 @@
 import { useState } from "react";
-import CreditCard from "../../components/CreditCard"
-import Slider from "react-slick";
+import CreditCard from "../../components/CreditCard";
 
 const Cards = () => {
     const [showAllCards, setShowAllCards] = useState(false);
-    const settings = {
-        dots: false,
-        infinite: true,
-        speed: 500,
-        slidesToShow: 3,
-        slidesToScroll: 1,
-    };
     const creditCards = [
         {
             balance: "$5,756",
@@ -57,13 +49,6 @@ const Cards = () => {
                     <CreditCard key={index} variant={index === 0 || index === 2 ? "black" : "white"} details={card} />
                 ))}
             </div>
-            {/* <div className="w-[1000px]">
-                <Slider {...settings}>
-                    {creditCards.map((card, index) => (
-                        <CreditCard key={index} variant={index === 0 || index === 2 ? "black" : "white"} details={card} />
-                    ))}
-                </Slider>
-            </div> */}
         </div>
     )
 }

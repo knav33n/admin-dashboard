@@ -6,7 +6,7 @@ import { useLocation, useNavigate } from 'react-router';
 import { TiThMenu } from "react-icons/ti";
 import Input from './Input';
 
-const PAGE_TITLES = {
+const PAGE_TITLES: Record<string, string> = {
     "/": "Overview",
     "/settings": "Settings",
 }

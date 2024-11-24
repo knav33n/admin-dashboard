@@ -1,14 +1,13 @@
+import { BsChevronRight } from "react-icons/bs";
 import Slider from "react-slick";
 import User from "./User";
-import { BsChevronLeft, BsChevronRight } from "react-icons/bs";
 
-const CustomPrevArrow = ({ onClick, className }) => (
-    <button className={`w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center ml-2 hover:bg-gray-100 shadow-custom ${className}`} onClick={onClick}>
-        <BsChevronLeft className="w-5 h-5 text-gray-400" />
-    </button>
-);
+interface CustomArrowProps {
+    className?: string;
+    onClick?: () => void;
+}
 
-const CustomNextArrow = ({ onClick, className }) => (
+const CustomNextArrow = ({ onClick, className }: CustomArrowProps) => (
     <button className={`w-[50px] h-[50px] rounded-full bg-white flex items-center justify-center ml-2 md:hover:bg-gray-100 shadow-custom ${className}`} onClick={onClick}>
         <BsChevronRight className="w-5 h-5" color="#718EBF" />
     </button>
@@ -65,4 +64,4 @@ const UsersCarousel = () => {
         </div>
     )
 }
-export default UsersCarousel
+export default UsersCarousel;
