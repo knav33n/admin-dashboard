@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #f5f7fa;
+  color: #232323;
+}
+
+.slick-prev:before,
+.slick-next:before,
+[dir="rtl"] .slick-prev:before {
+  content: "";
+}
+
+.slick-next:focus,
+.slick-next:hover,
+.slick-prev:focus,
+.slick-prev:hover {
+  background-color: #fff;
+}
