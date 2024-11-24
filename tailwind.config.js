@@ -22,6 +22,9 @@ export default {
       boxShadow: {
         'custom': '4px 4px 18px -2px #E7E4E8CC',
       },
+      fontFamily: {
+        sans: ['Roboto', 'Arial', 'sans-serif'],
+      },
     },
   },
   plugins: [],
